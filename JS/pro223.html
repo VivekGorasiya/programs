@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+
+<body>
+    <h1 id="op1"></h1>
+    <h1 id="op2"></h1>
+</body>
+
+</html>
+
+<script>
+    let values = [11, 25, 15, 22, 33, 44, 55, 66, 77, 88, 99];
+
+    document.write("<hr>"+values);
+
+    /*check for some array values greater than or equal to 18*/ 
+    let ans = values.some((x) => x >= 18); 
+
+    document.write("<hr> Mapped Array is "+ans);
+</script>

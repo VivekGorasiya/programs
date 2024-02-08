@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="jquery-3.7.1.min.js"></script>
+    <script src="jquery.color.js"></script>
+    <style>
+        .myDiv{
+            background-color: brown;
+            color: white;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <button id="btn1">Get Attributes</button>
+    <button id="btn2">Set Attributes</button>
+    <hr>
+    <a href="https://www.w3schools.com" id="link1">Read Content</a>
+</body>
+</html>
+
+<script>
+    $(document).ready(function(){
+        // jQuery contains powerful methods for changing and manipulating HTML elements and attributes.
+
+        $("#btn1").click(function(){
+            alert($("#link1").attr("href"));
+        });
+
+        $("#btn2").click(function(){
+            $("#link1").attr("href", "https://www.w3schools.com/jquery");
+        });
+    });
+</script>
